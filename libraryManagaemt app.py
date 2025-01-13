@@ -1,11 +1,9 @@
 from datetime import datetime, timedelta
-import getpass  # For user authentication
+import getpass  
 
-# Books dictionary to store all book information
 books = {}
 borrowed_books = {}
-users = {"admin": "password123"}  # Predefined user for authentication (for demonstration)
-
+users = {"admin": "password123"}  
 
 def authenticate_user():
     username = input("Enter your username: ")
@@ -17,9 +15,9 @@ def calculate_due_date():
 
 def calculate_overdue_fee(return_date, due_date):
     days_overdue = (return_date - due_date).days
-    return max(0, days_overdue * 1.5)  # Charge $1.50 per overdue day
+    return max(0, days_overdue * 1.5)  
 
-# Enhanced Add Book function with genre and category options
+
 def add_book():
     if not authenticate_user():
         print("Authentication failed! Access denied.")
@@ -78,7 +76,7 @@ def search_book():
     else:
         print("No books found.")
 
-# Display books with sorting by title and genre
+
 def display_books():
     if books:
         print("All Books:")
@@ -101,7 +99,7 @@ def borrow_book():
     else:
         print("Book not available or not found.")
 
-# Return Book with overdue fee calculation
+
 def return_book():
     title = input("Enter title of the book to return: ")
     if title in borrowed_books:
@@ -119,7 +117,7 @@ def return_book():
     else:
         print("Book not found in borrowed records.")
 
-# Library Analytics to show usage statistics
+
 def library_analytics():
     print("Library Analytics:")
     print(f"Total books in library: {len(books)}")
