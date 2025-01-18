@@ -1,6 +1,6 @@
 Library Management System | Python Project
 
-Developed an interactive Library Management System with advanced functionalities to streamline book management, borrowing, and analytics within a virtual library environment.
+Developed a  Library Management System with advanced functionalities to streamline book management, borrowing, and analytics within a virtual library environment.
 
 	•	Enhanced Book Management: Designed a robust structure using Python dictionaries and lists to manage large datasets efficiently. Implemented multi-copy tracking, enabling dynamic addition, removal, and inventory management of books.
 	•	User Authentication & Role-Based Access: Integrated secure user authentication (using getpass library) to protect administrative actions like adding or removing books, ensuring only authorized users can modify records.
