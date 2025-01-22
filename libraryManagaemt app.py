@@ -59,7 +59,7 @@ def remove_book():
     else:
         print("Book not found.")
 
-# Search function with filtering by genre
+
 def search_book():
     search_info = input("Enter title, author, or genre to search: ").lower()
     found_books = []
@@ -85,7 +85,7 @@ def display_books():
     else:
         print("No books available.")
 
-# Borrow Book with due date tracking
+
 def borrow_book():
     title = input("Enter title of the book to borrow: ")
     if title in books and books[title]["copies"] > 0:
