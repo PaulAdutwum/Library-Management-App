@@ -123,7 +123,8 @@ def library_analytics():
     print(f"Total books in library: {len(books)}")
     print(f"Total borrowed books: {len(borrowed_books)}")
    
-# Interface Loop
+
+
 while True:
     print("\nWELCOME TO PAUL'S LIBRARY SERVICES, CHOOSE FROM THE MENU BELOW:")
     print("=================================================================")
